@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--width: 0;
+	}
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	body {
+		display: grid;
+		padding: 10px;
+		place-content: center;
+		font-family: 'Merriweather', serif;
+		background-color: #e6e9fb;
+	}
+}
+
+@layer utilities {
+	.mask {
+		mask: url('./assets/star.svg') no-repeat;
+	}
+}
